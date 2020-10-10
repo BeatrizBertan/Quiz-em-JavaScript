@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		 
+    <meta charset = "utf-8">
+    
+    <link rel = "shortcut icon" href = "img/tree.png">
+    
+    <title>FeedBack</title>
+    
+    <link rel = "stylesheet" type = "text/css" href = "index.css">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Rye|Roboto|Work+Sans&display=swap" rel="stylesheet">
+	<script type = "text/javascript" src ="quizz.js"></script>
+
+	</head>
+	
+	<body>
+		
+		<center>
+	<header class = "logo1">
+		
+        <figcaption class = "icone"><img src = "img/tree.png" class = "logo2">GreenPuting</figcaption>
+    
+    </header>
+		</center>
+		
+		<article class = "texto">
+			<h5 class = "result">Resultado do quiz</h5>
+			
+			<h5 id = "coment"></h5>
+			
+			<script>
+				document.write('<img src = "img/selvagem.jpeg" class = "imgselv">');
+				document.getElementById ("coment").innerHTML = "Aah, que pena em? Melhor pesquisar mais sobre a Computação Verde, assim você deixa de ser um selvagem, até o Laranjo sabe que você é um! Esperamos melhores resultados da próxima vez, tudo bem?";
+				
+			</script>
+			
+			<br><br>
+			<h5 class = "result">Obrigada por jogar nosso quiz!</h5>
+			
+		
+			<p class = "gabarito"></p>
+        	<button onclick = "gab()"> Gabarito </button> <button onclick = "gabn()">Esconder</button>
+			
+			<p id = "gab"></p>
+			
+			<script>                
+            document.getElementByClassName("gabarito").innerHTML = "Respostas Corretas";
+            function gab(){
+            document.getElementById ("gab").innerHTML = "A <br> C <br> B <br> A <br> A";	
+            }
+            function gabn(){
+            document.getElementById ("gab").innerHTML = " ";	
+            }
+		
+		
+        	</script>
+		
+		
+			<center>
+			
+			<div class = "restart">				
+		<p id = "perg"></p>
+        <button onclick="sim()"> Sim </button> <button onclick= "nao()"> Não </button>
+						
+        <script>                
+            document.getElementById('perg').innerHTML = "Deseja recomeçar?";
+            function sim(){
+                window.location.href = "index.html";
+            }
+
+            function nao(){
+                window.location.href = "https://www.youtube.com/watch?v=T4seJYrnick"
+            }
+
+        </script>
+		    </div>
+			</center>
+
+		</article>
+		
+		<footer>
+		<p>GreenPuting™ Quiz</p>
+		<p>Beatriz Bertan - 31955312</p>
+		<p>Marcela Sousa - 31958443</p>
+		<p>Turma 2H - 2019</p>
+		</footer>
+		
+		<br>
+		
+		
+	</body>
+
+</html>
